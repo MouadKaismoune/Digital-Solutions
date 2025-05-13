@@ -1,0 +1,164 @@
+
+:root{
+    --color1: red;
+    --color2: orange;
+    --color3: black;
+    --color4: gray;
+    --primaryColor: #00ad4d;
+    --secondaryColor: #332b29;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 85px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo, footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer .logo{
+    justify-content: center !important;
+}
+nav  img, footer img{
+    width: 50px;
+    margin-right: 20px;
+}
+nav span, footer span{
+    font-size: 40px;
+}
+nav span:first-of-type, footer span:first-of-type{
+    color: var(--primaryColor);
+}
+nav span:last-of-type, footer span:last-of-type{
+    color: var(--secondaryColor);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+nav li a{
+    padding: 5px;
+    color: var(--secondaryColor);
+    transition-duration: .5s;
+    transition-property: border-bottom;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav li a:hover{
+    border-bottom: var(--secondaryColor) solid 1px ;
+}
+
+
+.heading{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.heading p:first-of-type{
+    font-size: 20px;
+    color: var(--secondaryColor);
+}
+.heading p:last-of-type{
+    font-size: 60px;
+    color: var(--primaryColor);
+}
+.heading h2{
+    width: 50%;
+    margin: 10px auto 0px;
+    font-size: 26px;
+}
+
+footer{
+    text-align: center;
+    padding: 70px 0;
+    background-color: burlywood;
+}
+footer .logo{
+    margin-bottom: 50px;
+}
+footer p{
+    margin-block: 20px;
+}
+footer .social a{
+    margin-inline: 10px;
+    display: inline-block;
+    color: var(--primaryColor);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    h1{
+        font-size: 65px;
+    }
+    .heading h2{
+        width: 80%;
+    }
+    .heading{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 700px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    
+    nav li a{
+        padding: 0px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .heading h2{
+        width: 100%;
+        margin: 10px auto 0px;
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,364 @@
+header{
+    min-height: 100vh;
+    padding-top: 40px;
+    background: url("../imgs/BG1.jpg");
+}
+
+header .content{
+    margin-top: 200px;
+    text-align: center;
+}
+
+header .content p{
+    margin: 35px auto;
+    font-size: 22px;
+    width: 50%;
+}
+
+header .content a{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: transparent;
+    padding: 15px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px var(--secondaryColor);
+    transition: .5s;
+    color: var(--secondaryColor);
+}
+
+header .content a:hover{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor)
+}
+.WhatWeDo{
+    text-align: center;
+    background: url("../imgs/BG2.jpg");
+}
+.WhatWeDo .cards{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WhatWeDo .cards .card{
+    padding: 40px;
+    margin: 0 20px;
+    text-align: center;
+    min-height: 300px;
+    box-shadow: 0 0 10px var(--primaryColor);
+    border-radius: 5px;
+    transition: .2s;
+}
+.WhatWeDo .cards .card i{
+    font-size: 70px;
+    color: var(--primaryColor);
+    margin-bottom: 40px;
+    transition: .5s;
+}
+.WhatWeDo .cards .card i:hover{
+    transform: rotate(360deg);
+}
+.WhatWeDo .cards .card h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.WhatWeDo .cards .card p{
+    font-size: 18px;
+    line-height: 2;
+    color: var(--secondaryColor);
+}
+.WhatWeDo .cards .card:hover{
+    transform: translateY(-10px);
+}
+.WhatWeDo .mainSection{
+    width: 70%;
+    margin-inline: auto;
+    padding-block: 70px;
+    text-align: center;
+    line-height: 1.8;
+    color: var(--secondaryColor);
+    font-size: 18px;
+}
+.WhatWeDo a, .CaseStudy a{
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 20px;
+}
+.WhatWeDo .empty{
+    padding-bottom: 30px;
+}
+
+.WhoWeAre{
+    background-color: aquamarine;
+}
+.WhoWeAre .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.WhoWeAre .row img{
+    max-width: 50%;
+}
+.WhoWeAre .row p{
+    font-size: 20px;
+    color: var(--secondaryColor);
+    line-height: 1.8;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.pricing .cards{
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+}
+.pricing .cards .card{
+    padding: 50px 10px;
+    width: 33%;
+    box-shadow: 0 0 10px var(--primaryColor);
+    margin:0 10px;
+    background-color: var(--secondaryColor);
+    color: white;
+    line-height: 2.5;
+    border-top: 5px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
+    border-radius: 10px;
+}
+.pricing .cards .card h3{
+    font-size: 29px;
+}
+.pricing .cards .card p:first-of-type{
+    color: var(--primaryColor);
+    font-size: 29px;
+}
+.pricing .cards .card p:last-of-type{
+    margin-bottom: 20px;
+}
+.pricing .cards .card a{
+    font-size: 20px;
+    color: var(--primaryColor);
+}
+.pricing .cards .toTop{
+    transform: translateY(-50px);
+}
+.OurStats{
+    margin-top: 50px;
+    background-color: aquamarine;
+}
+.OurStats .cards{
+    display: flex;
+    gap: 10px
+}
+.OurStats .cards .card{
+    padding: 50px 10px;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    transition: .2s;
+    margin-bottom: 40px;
+}
+.OurStats .cards .card:hover{
+    box-shadow: 0 0 10px var(--primaryColor);
+}
+.OurStats .cards .card i{
+    font-size: 100px;
+    margin-bottom: 50px;
+    color: var(--primaryColor)
+}
+.OurStats .cards .card p:first-of-type{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.OurStats .cards .card p:last-of-type{
+    font-size: 23px;
+    color: var(--secondaryColor)
+}
+.testimonials{
+    text-align: center;
+}
+.testimonials .row{
+    margin: 40px auto;
+    width: 70%;
+}
+.testimonials .row p{
+    font-size: 20px;
+    line-height: 2.2;
+    padding: 25px 60px;
+    text-align: center;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+.testimonials .row i{
+    color: var(--primaryColor);
+    font-size: 25px;
+}
+.testimonials img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonials .container > p:first-of-type{
+    color: var(--primaryColor);
+    font-size: 19px;
+    font-weight: bold;
+    margin-block: 10px;
+}
+.testimonials .container > p:last-of-type{
+    color:var(--secondaryColor);
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+.CaseStudy .gridCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: minmax(200px, 200px);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.CaseStudy .gridCards .box{
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    & .contentBox{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top,#00ad4dcc, #00ad4d33);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+}
+.CaseStudy .gridCards .box .contentBox:hover{
+    opacity: 0;
+}
+.CaseStudy .gridCards .box1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url("../imgs/im1.jpeg");
+}
+.CaseStudy .gridCards .box2{
+    background-image: url("../imgs/im2.jpeg");
+}
+.CaseStudy .gridCards .box3{
+    background-image: url("../imgs/im3.jpeg");
+}
+.CaseStudy .gridCards .box4{
+    background-image: url("../imgs/im4.jpeg");
+}
+.CaseStudy .gridCards .box5{
+    background-image: url("../imgs/im5.jpeg");
+}
+.CaseStudy .gridCards .box6{
+    grid-column: 3/5;
+    grid-row: 2/4;
+    background-image: url("../imgs/im6.jpeg");
+}
+.CaseStudy{
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .WhatWeDo .cards{
+        flex-direction: column;
+        transform: none;
+    }
+    .WhatWeDo .cards .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .WhatWeDo .cards .card:hover{
+        transform: none;
+    }
+    .WhatWeDo .mainSection{
+        width: 85%;
+        padding-block: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    header .content{
+        margin-top: 40px;
+    }
+    header .content p{
+        margin: 40px auto;
+        width: 70%;
+    }
+    .CaseStudy .gridCards{
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: minmax(200px, auto);
+        margin-bottom: 20px;
+    }
+    .CaseStudy .gridCards .box1{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .CaseStudy .gridCards .box6{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .pricing .cards{
+        flex-direction: column;
+    }
+    .pricing .cards .card{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .pricing .cards .toTop{
+        transform: translateY(0);
+    }
+    .OurStats .cards{
+        flex-wrap: wrap;
+    }
+    .OurStats .cards .card{
+        min-width: 40%;
+        flex-grow: 1;
+    }
+}
+@media (max-width: 700px){
+    .WhoWeAre .row{
+        flex-direction: column;
+    }
+    .WhoWeAre .row img{
+        margin-block: 20px;
+    }
+    .WhoWeAre .row p{
+        margin-right: 0;
+    }
+}
+@media (max-width: 500px){
+    header .content p{
+        font-size: 20px;
+        width: 80%;
+    }
+    .CaseStudy .gridCards{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .pricing .cards .card{
+        width: 100%;
+    }
+    .OurStats .cards{
+        flex-direction: column;
+    }
+    .OurStats .cards .card{
+        width: 100%;
+    }
+    .testimonials .row{
+        width: 100%;
+    }
+    .testimonials .row p{
+        padding: 10px 20px;
+    }
+}
